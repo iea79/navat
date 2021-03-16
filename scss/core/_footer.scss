@@ -1,0 +1,33 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.address {
+	background: url("../img/marker.svg") 0 0 no-repeat;
+	padding-left: 44px;
+}
+
+.site {
+	color: $color_primary;
+	margin: 0 64px 0 0;
+}
+
+.phone {
+	background: url("../img/phone.svg") 0 0 no-repeat;
+	padding-left: 46px;
+}
+
+.footer {
+	position: relative;
+	padding: 53px 40px 58px;
+	border-top: 1px solid rgba(164, 135, 107, 0.46);
+	// background-color: #ddd;
+	font-size: 28px;
+	line-height: 139.69%;
+	text-transform: uppercase;
+
+	&__content {
+		// @extend .container_center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

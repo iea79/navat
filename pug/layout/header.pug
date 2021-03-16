@@ -1,0 +1,63 @@
+header.header
+    .header__content
+        .header__lang
+            ul
+                li
+                    a.active(href="") RU
+                li
+                    a(href="") En
+                li
+                    a(href="") 中文
+        a.logo(href="/")
+            img(src="img/logo.svg", alt="alt")
+
+        .header__action
+            .nav__toggle
+                .icon-menu
+                    span
+            .nav__toggle
+                .icon-search
+            nav.nav
+                .nav__head
+                    .search
+                        .search__title поиск 
+                        form.search__form
+                            input(type="text", placeholder="Введите название блюда")
+                            button.btn(type="submit")
+                .nav__list
+                    ul.navbar
+                        - 
+                            nav = [
+                                {
+                                    part: 'бар',
+                                    list: [
+                                        {name: 'Домашняя выпечка', href: ''},
+                                        {name: 'закуски', href: ''},
+                                        {name: 'салаты', href: ''},
+                                        {name: 'десерты', href: ''},
+                                        {name: 'напитки', href: ''},
+                                    ]
+                                },
+                                {
+                                    part: 'кухня',
+                                    list: [
+                                        {name: 'Домашняя выпечка', href: ''},
+                                        {name: 'завтраки', href: ''},
+                                        {name: 'хан самса', href: ''},
+                                        {name: 'супы', href: ''},
+                                        {name: 'вторые блюда', href: ''},
+                                        {name: 'гарниры', href: ''},
+                                        {name: 'соусы', href: ''},
+                                        {name: 'шашлыки', href: ''},
+                                        {name: 'пловы заказные', href: ''},
+                                        {name: 'блюда заказные', href: ''},
+                                    ]
+                                }
+                            ]
+                        each parts in nav
+                            li.navbar__item
+                                .navbar__title= parts.part
+                                ul.navbar__list
+                                    each links in parts.list
+                                        li.navbar__item
+                                            a.navbar__link(href= links.href)= links.name

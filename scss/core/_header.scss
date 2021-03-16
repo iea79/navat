@@ -1,0 +1,77 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 63px 0 32px;
+	// background-color: #ddd;
+	border-bottom: 1px solid rgba(164, 135, 107, 0.46);
+
+	&__content {
+		// @extend .container_center;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__lang {
+		margin-left: -1em;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 21px 0;
+			font-weight: 500;
+			font-size: 29.8983px;
+		}
+
+		li {
+			margin-bottom: 32px;
+		}
+
+		a {
+			display: block;
+			padding: 10px 10px 10px 52px;
+			position: relative;
+			text-transform: uppercase;
+
+			&:after {
+				display: none;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				transition: 0.3s;
+				width: 0;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				background: #A4876B;
+				border-radius: 0 26.5763px 26.5763px 0;
+				z-index: -1;
+			}
+
+			&.active,
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__action {
+		width: 124px;
+		margin-left: 13px;
+		padding-top: 41px;
+		margin-right: -1em;
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
