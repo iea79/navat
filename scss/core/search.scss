@@ -1,0 +1,32 @@
+.search {
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    &__form {
+        display: flex;
+        position: relative;
+
+        input {
+            flex-grow: 1;
+        }
+
+        .btn {
+            @extend .icon-search;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 89px;
+            height: 89px;
+            background-color: #1F4544;
+            background-size: 39px;
+
+            &:hover {
+                background-color: lighten(#1F4544, 5%);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+extend layout/layout.pug
+
+block content
+
+    // begin pageTop
+    .menuTop
+        .menuTop__back
+        .menuPart кухня
+
+    // end pageTop
+
+    .menu
+        .menuTitle.menuTitle_lg меню
+        // begin menuSlider
+        .menuSlider
+            each item in ['ЗАВТРАКИ', 'выпечка', 'салаты','ЗАВТРАКИ', 'выпечка', 'салаты']
+                a.menuSlider__item(href="cat.html")
+                    .menuSlider__img.img
+                        img(src="img/menu-1.jpg", alt="")
+                    .menuSlider__name=item
+
+        // end menuSlider
+
+        // begin sales
+        .sales
+            .sales__title 8 марта в NAVAT!
+            .sales__content
+                .sales__video
+                    video(controls width="1088" height="507" poster="img/video.jpg")
+                        source(src="")
+
+
+        // end sales

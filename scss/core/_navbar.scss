@@ -1,2 +1,30 @@
 /* Navbar
 -------------------------------------------------------------------------------*/
+.navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &__title {
+        font-size: 119px;
+        margin: 0 0 30px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0 0 0 5px;
+        list-style: none;
+    }
+
+    &__item {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    &__link {}
+
+}

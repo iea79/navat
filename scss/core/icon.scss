@@ -1,0 +1,53 @@
+.icon-menu {
+    width: 69px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 72px;
+
+    &:hover {
+        color: $color_primary;
+
+        span {
+            width: 50%;
+        }
+
+        &:before {
+            width: 30%;
+        }
+    }
+
+    &:after,
+    &:before,
+    span {
+        content: '';
+        transition: 0.3s;
+        display: block;
+        border: 1px solid;
+        border-radius: 2px;
+    }
+
+    &:after,
+    &:before {
+        width: 100%;
+    }
+
+    span {
+        width: 69%;
+    }
+}
+
+.icon-search {
+    background: $color_primary url('../img/zoom.svg') center no-repeat;
+    background-size: 32px;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        // background-size: 42px;
+    }
+}

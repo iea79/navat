@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: -1060px;
+    top: 0;
+    bottom: 0;
+    background: #A4876B;
+    width: 1060px;
+    z-index: 10;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.3s;
+    box-shadow: 0 0 1em rgba(#000, .1);
+
+    &__head {
+        padding: 114px 94px 87px 105px;
+        background: rgba(143, 117, 91, 0.81) url("../img/nav-head.svg") 0 bottom repeat;
+    }
+
+    &__title {}
+
+    &__list {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 50px 99px;
+        background: url("../img/nav-logo.svg") right top 415px no-repeat;
+    }
+
+    &.open {
+        right: 0;
+    }
+}
