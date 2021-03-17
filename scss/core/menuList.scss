@@ -1,0 +1,28 @@
+.menuList {
+    margin: 35px 0 -45px -17px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 928px;
+
+    &__item {
+        padding-left: 17px;
+        width: 33.3%;
+        margin-bottom: 19px;
+        transition: 0.3s;
+    }
+
+    &__img {
+        padding-bottom: 100%;
+    }
+
+    &__name {
+        text-align: center;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 1.6;
+        margin-top: 18px;
+        text-transform: uppercase;
+        min-height: 72px;
+    }
+
+}

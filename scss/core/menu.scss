@@ -1,0 +1,21 @@
+.menu {
+    &Part {
+        position: absolute;
+        right: 0;
+        font-weight: 500;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: $color_primary;
+    }
+
+    &Back {
+        &:not(:empty) {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 500;
+            background: url("../img/back.svg") 0 center no-repeat;
+            padding-left: 25px;
+            margin-bottom: 49px;
+        }
+    }
+}

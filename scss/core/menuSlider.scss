@@ -1,0 +1,38 @@
+.menuSlider {
+    display: flex;
+    margin-left: -56px;
+    margin-right: -56px;
+    margin-bottom: 106px;
+    padding: 0 0 46px 33px;
+    overflow-x: auto;
+    background: url("../img/arrow.svg") left 85px bottom 2px no-repeat;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    &__item {
+        padding-left: 24px;
+        width: 462px;
+        flex: none;
+        transition: 0.3s;
+
+        &:last-child {
+            margin-right: 24px;
+        }
+    }
+
+    &__img {
+        padding-bottom: 86%;
+        margin-bottom: 35px;
+    }
+
+    &__name {
+        text-align: center;
+        font-weight: 500;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+}

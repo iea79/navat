@@ -1,0 +1,33 @@
+$pp: 43px;
+
+.parts {
+    display: flex;
+    margin: 55px 0 50px (-$pp);
+
+    &__item {
+        padding-left: $pp;
+        text-align: center;
+        width: 50%;
+        transition: 0.3s;
+    }
+
+    &__name {
+        display: inline-block;
+        margin-top: 48px;
+        font-weight: 500;
+        font-size: 52px;
+        text-transform: uppercase;
+
+        &:before {
+            content: '';
+            width: 279px;
+            display: block;
+            border-top: 3px solid #BCA48D;
+            margin-bottom: 18px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+}
