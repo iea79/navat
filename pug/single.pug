@@ -1,0 +1,25 @@
+extend layout/layout.pug
+
+block content
+    // begin pageTop
+    .menuTop
+        a.menuBack(href="/") на главную
+        .menuPart кухня
+
+    // end pageTop
+
+    .single
+        .single__img.img
+            img(src="img/single.jpg", alt="")
+
+        .single__info
+            .single__top
+                .single__name каша овсяная на <br>молоке с фруктами
+                .single__data
+                    | 380 г
+                    .single__sep
+                    | 145 руб
+
+            .single__compound
+                .single__label Состав: 
+                | овсянка, молоко, сахар, свежая клубника, яблоко, шоколад, соль

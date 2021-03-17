@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?0.6"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?0.5"/>
   </head>
   <body>
     <div class="wrapper">
@@ -69,17 +69,25 @@
         </div>
       </header>
       <main class="main_content">
-        <!-- begin parts-->
-        <div class="parts"><a class="parts__item" href="kitchen.html"><span class="img"><img src="img/citchen.jpg" alt=""/></span><span class="parts__name">кухня</span></a><a class="parts__item" href="kitchen.html"><span class="img"><img src="img/bar.jpg" alt=""/></span><span class="parts__name">бар</span></a></div>
-        <!-- end parts-->
-        <!-- begin sales-->
-        <div class="sales">
-          <div class="sales__title">8 марта в NAVAT!</div>
-          <div class="sales__content">
-            <div class="sales__img"><img src="img/sales.jpg" alt=""/></div>
+        <!-- begin pageTop-->
+        <div class="menuTop"><a class="menuBack" href="/">на главную</a>
+          <div class="menuPart">кухня</div>
+        </div>
+        <!-- end pageTop-->
+        <div class="single">
+          <div class="single__img img"><img src="img/single.jpg" alt=""/></div>
+          <div class="single__info">
+            <div class="single__top">
+              <div class="single__name">каша овсяная на <br>молоке с фруктами</div>
+              <div class="single__data">380 г
+                <div class="single__sep"></div>145 руб
+              </div>
+            </div>
+            <div class="single__compound">
+              <div class="single__label">Состав: </div>овсянка, молоко, сахар, свежая клубника, яблоко, шоколад, соль
+            </div>
           </div>
         </div>
-        <!-- end sales-->
       </main>
       <footer class="footer">
         <div class="footer__content">
@@ -88,7 +96,8 @@
           <div class="phone">996 551 63 11 11</div>
         </div>
       </footer>
-      <script src="js/function.js?0.6"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/function.js?0.5"></script>
     </div>
   </body>
 </html>
