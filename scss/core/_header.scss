@@ -1,7 +1,7 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	padding: 63px 0 32px;
+	padding: 28px 0 22px;
 	// background-color: #ddd;
 	border-bottom: 1px solid rgba(164, 135, 107, 0.46);
 
@@ -18,18 +18,18 @@
 		ul {
 			list-style: none;
 			padding: 0;
-			margin: 21px 0;
+			margin: 20px 0;
 			font-weight: 500;
-			font-size: 29.8983px;
+			font-size: 20px;
 		}
 
 		li {
-			margin-bottom: 32px;
+			margin-bottom: 18px;
 		}
 
 		a {
 			display: block;
-			padding: 10px 10px 10px 52px;
+			padding: 8px 5px 5px 34px;
 			position: relative;
 			text-transform: uppercase;
 
@@ -61,11 +61,16 @@
 	}
 
 	&__action {
-		width: 124px;
+		width: 79px;
 		margin-left: 13px;
-		padding-top: 41px;
+		padding-top: 34px;
 		// margin-right: -1em;
 	}
+}
+
+.logo {
+	margin-top: 8px;
+	width: 162px;
 }
 
 // stiky menu

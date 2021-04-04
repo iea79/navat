@@ -1,11 +1,11 @@
 .icon-menu {
-    width: 69px;
-    height: 50px;
+    width: 43px;
+    height: 33px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 45px;
 
     &:hover {
         color: $color_primary;
@@ -41,9 +41,9 @@
 
 .icon-search {
     background: $color_primary url('../img/zoom.svg') center no-repeat;
-    background-size: 32px;
-    width: 69px;
-    height: 69px;
+    background-size: 20px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     transition: 0.3s;
 

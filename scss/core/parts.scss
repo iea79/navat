@@ -1,4 +1,4 @@
-$pp: 43px;
+$pp: 28px;
 
 .parts {
     display: flex;
@@ -13,17 +13,17 @@ $pp: 43px;
 
     &__name {
         display: inline-block;
-        margin-top: 48px;
+        margin-top: 29px;
         font-weight: 500;
-        font-size: 52px;
+        font-size: 33px;
         text-transform: uppercase;
 
         &:before {
             content: '';
-            width: 279px;
+            width: 179px;
             display: block;
             border-top: 3px solid #BCA48D;
-            margin-bottom: 18px;
+            margin-bottom: 12px;
             position: relative;
             left: 50%;
             transform: translateX(-50%);

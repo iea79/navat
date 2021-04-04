@@ -1,11 +1,13 @@
 .menuSlider {
     display: flex;
-    margin-left: -56px;
-    margin-right: -56px;
-    margin-bottom: 106px;
-    padding: 0 0 46px 33px;
+    margin-left: -51px;
+    margin-right: -37px;
+    margin-bottom: 66px;
+    padding: 0 0 34px 33px;
     overflow-x: auto;
-    background: url("../img/arrow.svg") left 85px bottom 2px no-repeat;
+    background: url("../img/arrow.svg") left 59px bottom 3px no-repeat;
+    background-size: 570px;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
         width: 0;
@@ -13,8 +15,8 @@
     }
 
     &__item {
-        padding-left: 24px;
-        width: 462px;
+        padding-left: 16px;
+        width: 297px;
         flex: none;
         transition: 0.3s;
 
@@ -25,13 +27,13 @@
 
     &__img {
         padding-bottom: 86%;
-        margin-bottom: 35px;
+        margin-bottom: 22px;
     }
 
     &__name {
         text-align: center;
         font-weight: 500;
-        font-size: 42px;
+        font-size: 27px;
         text-transform: uppercase;
     }
 

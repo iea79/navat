@@ -1,12 +1,12 @@
 .sales {
-    margin: 100px 0 12px;
+    margin: 66px 0 5px;
 
     &__title {
         font-weight: 500;
-        font-size: 80px;
+        font-size: 51px;
         color: $color_primary;
         text-transform: uppercase;
-        margin: 0 0 18px;
+        margin: 0 0 12px;
     }
 
     &__content {}
@@ -18,10 +18,10 @@
     }
 
     &__video {
-        margin-top: 33px;
-        padding-bottom: 507px;
+        margin-top: 21px;
+        padding-bottom: 326px;
         position: relative;
-        max-width: 1088px;
+        width: 696px;
 
         iframe,
         object,

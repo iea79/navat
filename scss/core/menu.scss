@@ -1,21 +1,25 @@
 .menu {
+    // padding-top: 18px;
+
     &Part {
         position: absolute;
         right: 0;
         font-weight: 500;
-        font-size: 32px;
+        font-size: 22px;
         text-transform: uppercase;
         color: $color_primary;
     }
 
     &Back {
         &:not(:empty) {
-            font-size: 32px;
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: 500;
-            background: url("../img/back.svg") 0 center no-repeat;
+            background: url("../img/back.svg") left 6px center no-repeat;
+            background-size: 9px;
             padding-left: 25px;
-            margin-bottom: 49px;
+            margin-left: 5px;
+            margin-bottom: 30px;
         }
     }
 }
