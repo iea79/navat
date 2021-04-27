@@ -3,8 +3,12 @@
     padding-bottom: 93%;
     position: relative;
     display: block;
-    border-radius: 14px;
+    border-radius: 8px;
     overflow: hidden;
+
+    @media (min-width: 768px) {
+        border-radius: 14px;
+    }
 
     img {
         display: block;

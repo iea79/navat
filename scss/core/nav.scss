@@ -2,20 +2,29 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    right: -677px;
+    right: -90%;
     top: 0;
     bottom: 0;
     background: #A4876B;
-    width: 677px;
+    width: 90%;
     z-index: 10;
     overflow: hidden;
     padding: 0;
     transition: 0.3s;
     box-shadow: 0 0 1em rgba(#000, .1);
 
+    @media (min-width: 768px) {
+        width: 677px;
+        right: -677px;
+    }
+
     &__head {
-        padding: 66px 61px 56px 65px;
+        padding: 25px 20px;
         background: rgba(143, 117, 91, 0.81) url("../img/nav-head.svg") 0 bottom repeat;
+
+        @media (min-width: 768px) {
+            padding: 66px 61px 56px 65px;
+        }
     }
 
     &__title {}
@@ -23,8 +32,17 @@
     &__list {
         flex-grow: 1;
         overflow-y: auto;
-        padding: 31px 61px;
+        padding: 20px;
         background: url("../img/nav-logo.svg") right top 415px no-repeat;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: y mandatory;
+
+        @media (min-width: 768px) {
+            padding: 31px 61px;
+        }
     }
 
     &.open {

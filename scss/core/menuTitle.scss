@@ -1,16 +1,24 @@
 .menuTitle {
     font-weight: 500;
-    font-size: 51px;
+    font-size: 30px;
     line-height: 1.15;
     text-transform: uppercase;
     margin: 0 0 0 7px;
     color: $color_primary;
 
+    @media (min-width: 768px) {
+        font-size: 51px;
+    }
+
     &_lg {
-        font-size: 103px;
+        font-size: 63px;
         font-weight: 400;
         line-height: 0.92;
-        margin-bottom: -18px;
+        // margin-bottom: -18px;
+
+        @media (min-width: 768px) {
+            font-size: 103px;
+        }
     }
 
     &__count {

@@ -2,12 +2,22 @@
     display: flex;
     margin-left: -51px;
     margin-right: -37px;
-    margin-bottom: 66px;
-    padding: 0 0 34px 33px;
-    overflow-x: auto;
+    margin-bottom: 36px;
+    padding: 0 0 24px 33px;
     background: url("../img/arrow.svg") left 59px bottom 3px no-repeat;
-    background-size: 570px;
-    scroll-behavior: smooth;
+    background-size: 280px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 33px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 66px;
+        background-size: 570px;
+        padding: 0 0 34px 33px;
+    }
 
     &::-webkit-scrollbar {
         width: 0;
@@ -16,25 +26,38 @@
 
     &__item {
         padding-left: 16px;
-        width: 297px;
+        width: 200px;
         flex: none;
         transition: 0.3s;
+        scroll-snap-align: start;
 
         &:last-child {
             margin-right: 24px;
+        }
+
+        @media (min-width: 768px) {
+            width: 297px;
         }
     }
 
     &__img {
         padding-bottom: 86%;
-        margin-bottom: 22px;
+        margin-bottom: 13px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 22px;
+        }
     }
 
     &__name {
         text-align: center;
         font-weight: 500;
-        font-size: 27px;
+        font-size: 18px;
         text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-size: 27px;
+        }
     }
 
 }

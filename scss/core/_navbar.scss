@@ -10,8 +10,13 @@
     text-transform: uppercase;
 
     &__title {
-        font-size: 78px;
-        margin: 0 0 20px;
+        font-size: 48px;
+        margin: 0 0 10px;
+
+        @media (min-width: 768px) {
+            margin: 0 0 20px;
+            font-size: 78px;
+        }
     }
 
     &__list {
@@ -21,8 +26,13 @@
     }
 
     &__item {
-        font-size: 23px;
-        margin-bottom: 19px;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 19px;
+            font-size: 23px;
+        }
     }
 
     &__link {}

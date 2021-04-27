@@ -6,7 +6,7 @@ body {
 	font-size: $main_font_size;
 	height: auto;
 	min-height: 100%;
-	background: #1B3E3D url("../img/aside.svg") right top repeat-y;
+	background: #1B3E3D url("") right top repeat-y;
 	background-size: 132px auto;
 }
 
@@ -44,7 +44,11 @@ a {
  ----------------------------------------------------------------------------- */
 .main_content {
 	flex-grow: 1;
-	padding: 37px 37px 30px;
+	padding: 27px 17px 20px;
+
+	@media (min-width: 768px) {
+		padding: 37px 37px 30px;
+	}
 }
 
 .container_center {

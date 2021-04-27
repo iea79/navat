@@ -8,7 +8,11 @@
 
 .site {
 	color: $color_primary;
-	margin: 0 10px;
+	margin: 9px 10px;
+
+	@media (min-width: 768px) {
+		margin: 0 10px;
+	}
 }
 
 .phone {
@@ -19,17 +23,26 @@
 
 .footer {
 	position: relative;
-	padding: 34px 40px 34px 44px;
+	padding: 24px 17px;
 	border-top: 1px solid rgba(164, 135, 107, 0.46);
 	// background-color: #ddd;
 	font-size: 18px;
 	line-height: 139.69%;
 	text-transform: uppercase;
 
+	@media (min-width: 768px) {
+		padding: 34px 40px 34px 44px;
+	}
+
 	&__content {
 		// @extend .container_center;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: column;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
 	}
 }

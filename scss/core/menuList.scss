@@ -2,13 +2,18 @@
     margin: 25px 0 -24px -10px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 593px;
+    // max-width: 593px;
 
     &__item {
         padding-left: 10px;
-        width: 33.3%;
+        width: 50%;
         margin-bottom: 12px;
         transition: 0.3s;
+        max-width: 235px;
+
+        @media (min-width: 768px) {
+            width: 33.3%;
+        }
     }
 
     &__img {

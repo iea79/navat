@@ -5,21 +5,33 @@
         position: absolute;
         right: 0;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 15px;
         text-transform: uppercase;
         color: $color_primary;
+
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
     }
 
     &Back {
         &:not(:empty) {
-            font-size: 20px;
+            font-size: 15px;
             text-transform: uppercase;
             font-weight: 500;
             background: url("../img/back.svg") left 6px center no-repeat;
-            background-size: 9px;
-            padding-left: 25px;
-            margin-left: 5px;
-            margin-bottom: 30px;
+            background-size: 7px;
+            padding-left: 19px;
+            margin-bottom: 19px;
+
+            @media (min-width: 768px) {
+                font-size: 20px;
+                margin-left: 5px;
+                margin-bottom: 30px;
+                background-size: 9px;
+                padding-left: 25px;
+
+            }
         }
     }
 }

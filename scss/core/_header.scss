@@ -1,9 +1,17 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	padding: 28px 0 22px;
+	padding: 18px 0 12px;
 	// background-color: #ddd;
 	border-bottom: 1px solid rgba(164, 135, 107, 0.46);
+
+	@media (min-width: 768px) {
+		padding: 28px 0 22px;
+	}
+
+	@media (min-width: 992px) {
+		padding: 10px 0 9px;
+	}
 
 	&__content {
 		// @extend .container_center;
@@ -20,18 +28,34 @@
 			padding: 0;
 			margin: 20px 0;
 			font-weight: 500;
-			font-size: 20px;
+			font-size: 16px;
+
+			@media (min-width: 768px) {
+				font-size: 20px;
+			}
+
+			@media (min-width: 992px) {
+				margin: 20px 0 0;
+			}
 		}
 
 		li {
 			margin-bottom: 18px;
+
+			@media (min-width: 992px) {
+				margin-bottom: 10px;
+			}
 		}
 
 		a {
 			display: block;
-			padding: 8px 5px 5px 34px;
+			padding: 8px 5px 5px 24px;
 			position: relative;
 			text-transform: uppercase;
+
+			@media (min-width: 768px) {
+				padding: 8px 5px 5px 34px;
+			}
 
 			&:after {
 				display: none;
@@ -61,16 +85,32 @@
 	}
 
 	&__action {
-		width: 79px;
+		width: 59px;
 		margin-left: 13px;
-		padding-top: 34px;
-		// margin-right: -1em;
+		padding-top: 20px;
+
+		@media (min-width: 768px) {
+			width: 79px;
+			padding-top: 34px;
+		}
+
+		@media (min-width: 992px) {
+			padding-top: 25px;
+		}
 	}
 }
 
 .logo {
 	margin-top: 8px;
-	width: 162px;
+	width: 102px;
+
+	@media (min-width: 768px) {
+		width: 162px;
+	}
+
+	@media (min-width: 992px) {
+		width: 140px;
+	}
 }
 
 // stiky menu

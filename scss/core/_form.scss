@@ -39,12 +39,16 @@ textarea {
 	background: #A4876B;
 	border-radius: 50px;
 	border: 1px solid #A4876B;
-	padding: 17px 34px;
+	padding: 17px 20px;
 	outline: none;
 	font-size: 18px;
 	font-weight: 300;
 	font-family: $main_font_family;
 	transition: all 0.3s;
+
+	@media (min-width: 768px) {
+		padding: 17px 34px;
+	}
 
 	&:hover {
 		border: 1px solid lighten(#A4876B, 5%);
