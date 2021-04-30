@@ -13,11 +13,17 @@ block content
         .menuTitle.menuTitle_lg меню
         // begin menuSlider
         .menuSlider
-            each item in ['ЗАВТРАКИ', 'выпечка', 'салаты','ЗАВТРАКИ', 'выпечка', 'салаты']
-                a.menuSlider__item(href="cat.html")
-                    .menuSlider__img.img
-                        img(src="img/menu-1.jpg", alt="")
-                    .menuSlider__name=item
+            each item, i in ['ЗАВТРАКИ', 'выпечка', 'салаты','ЗАВТРАКИ', 'выпечка', 'салаты']
+                if i === 0
+                    a.menuSlider__item(href="https://chaihananavat.ru/upload/uf/49a/49aaebd293e62035638fd07b01303e72.jpg" data-lightbox)
+                        .menuSlider__img.img
+                            img(src="img/menu-1.jpg", alt="")
+                        .menuSlider__name=item
+                else
+                    a.menuSlider__item(href="cat.html")
+                        .menuSlider__img.img
+                            img(src="img/menu-1.jpg", alt="")
+                        .menuSlider__name=item
 
         // end menuSlider
 
@@ -31,3 +37,7 @@ block content
 
 
         // end sales
+
+    .lightbox
+        .lightbox__close
+        .lightbox__content
