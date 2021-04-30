@@ -1,15 +1,7 @@
-/*!
- *
- * Evgeniy Ivanov - 2021
- * busforward@gmail.com
- * Skype: ivanov_ea
- *
- */
+
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelectorAll('.nav__toggle');
 const img = document.querySelectorAll('.img');
-const lightboxTrigger = document.querySelectorAll('[data-lightbox]');
-const lightboxClose = document.querySelector('.lightbox__close');
 const loader = document.querySelector('.loader');
 
 navToggle.forEach((item) => {
@@ -30,28 +22,41 @@ function hideMenu(e) {
 
 
 
-lightboxTrigger.forEach(item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
-        let lightbox = document.querySelector('.lightbox'),
+function showLightboxImg() {
+    const lightboxTrigger = document.querySelectorAll('[data-lightbox]');
+    const lightboxClose = document.querySelector('.lightbox__close');
+    
+    lightboxTrigger.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            let lightbox = document.querySelector('.lightbox'),
             lightboxContent = lightbox.querySelector('.lightbox__content'),
             src = this.href;
 
-        lightboxContent.innerHTML = `<img src=${src} />`;
-        lightbox.classList.add('open');
-        document.body.classList.add('not_scroll');
+            lightboxContent.innerHTML = `<img src=${src} />`;
+            lightbox.classList.add('open');
+            document.body.classList.add('not_scroll');
 
+        });
     });
-});
 
-lightboxClose.addEventListener('click', () => {
-    let lightbox = document.querySelector('.lightbox'),
+    lightboxClose.addEventListener('click', () => {
+        let lightbox = document.querySelector('.lightbox'),
         lightboxContent = lightbox.querySelector('.lightbox__content');
 
-    lightboxContent.innerHTML = ``;
-    lightbox.classList.remove('open');
-    document.body.classList.remove('not_scroll');
-});
+        lightboxContent.innerHTML = ``;
+        lightbox.classList.remove('open');
+        document.body.classList.remove('not_scroll');
+    });
+}
+
+try {
+    showLightboxImg();
+} catch (e) {
+
+} finally {
+
+}
 
 // Скрываем блоки с картинками, готовим анимацию появления
 // img.forEach(item => {
